@@ -68,6 +68,6 @@ defmodule FlyWeb.AppLive.Show do
   end
 
   def preview_url(app) do
-    "https://#{app["name"]}.fly.dev"
+    "https://#{app["hostname"]}"
   end
 end

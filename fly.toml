@@ -1,6 +1,6 @@
 # fly.toml file generated for flyio-ui-ex on 2021-08-26T16:42:20-05:00
 
-app = "flyio-ui-ex"
+app = "flyio-ui-manu"
 
 kill_signal = "SIGTERM"
 kill_timeout = 5

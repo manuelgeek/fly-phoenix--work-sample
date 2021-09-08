@@ -180,6 +180,9 @@ defmodule Fly.Client do
         app(name: $name) {
           id
           name
+          version
+          status
+          hostname
           organization {
             id
             slug
@@ -209,6 +212,27 @@ defmodule Fly.Client do
                 avatarUrl
               }
             }
+          }
+          deploymentStatus {
+            id
+            status
+            version
+            description
+            desiredCount
+            healthyCount
+            unhealthyCount
+          }
+          allocations {
+            id
+            taskName
+            version
+            region
+            desiredStatus
+            status
+            totalCheckCount
+            passingCheckCount
+            restarts
+            createdAt
           }
         }
       }

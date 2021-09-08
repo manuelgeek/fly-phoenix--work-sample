@@ -36,3 +36,5 @@ npm-debug.log
 
 # Local ENV values
 .envrc
+
+.idea
