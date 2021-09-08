@@ -19,6 +19,7 @@ defmodule FlyWeb.AppLive.Show do
 
     # Only make the API call if the websocket is setup. Not on initial render.
     if connected?(socket) do
+      reload_app
       {:ok, fetch_app(socket)}
     else
       {:ok, socket}
@@ -69,5 +70,14 @@ defmodule FlyWeb.AppLive.Show do
 
   def preview_url(app) do
     "https://#{app["hostname"]}"
+  end
+
+  @impl true
+  def handle_info(:app_reload, socket) do
+    {:noreply, fetch_app(socket)}
+  end
+
+  defp reload_app do
+    :timer.send_interval(5000, self(), :app_reload)
   end
 end
