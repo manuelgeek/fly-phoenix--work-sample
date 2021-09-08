@@ -80,4 +80,9 @@ defmodule FlyWeb.AppLive.Show do
   defp reload_app do
     :timer.send_interval(5000, self(), :app_reload)
   end
+
+  def format_date(date) do
+    Timex.from_now(Timex.parse(date, "{RFC3339z}") |> elem(1))
+  end
+
 end

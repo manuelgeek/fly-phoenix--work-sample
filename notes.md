@@ -4,12 +4,14 @@
 - I did the `fly status` details on the `show.html.heex` 
 - Added version, hostname details to already existing
 - Added Deployment status
-- App reloas `fetch_app/1` after every 5 seconds - not the best approach though
+- App reloads `fetch_app/1` after every 5 seconds - not the best approach though
+- added Times to format date - created `format_date/1` in `show.ex`
+- on index - added view button - easily accessible that clicking the whole component
 
 
 
 ## What I would have done given time
- - Add pagination to Instances
+ - Add pagination to Instances, Timeline info
  - clean the UI to use better components - I build simple tailwind components to demonstrate 
  - Separate the components
  - The app reloads the app details every 5 seconds - There should be a better way that this - maybe subscribe to channel
