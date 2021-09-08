@@ -14,8 +14,8 @@
 - I did the `fly status` details on the `show.html.heex` 
 - Added version, hostname details to already existing
 - Added Deployment status - created tailwind components - I'm not new to tailwind
-- App reloads `fetch_app/1` after every 5 seconds - not the best approach though
-- added Timex to format date - created `format_date/1` in `show.ex` - I feel like it's an overkill but this was an easier approach - Timex is big***
+- App reloads `fetch_app/1` after every 5 seconds - not the best approach though - this seems to timeout on making requests to the API - not the best approach - still looking for something reliable
+- added Timex to format date - created `format_date/1` in `show.ex` - I feel like it's an overkill but this was an easier approach - Timex is big*** for that small task
 - on index - added view button - easily accessible that clicking the whole component
 - simplified the `show.html.heex` , created different components from it
 - added preloader - when fetching data - also added checking for empty states
@@ -31,12 +31,13 @@
 
 ## What I would have done given time/ What I didn't build
 - A refresh button - I was kind of torn between adding a refresh button instead of auto refresh with a timer - manual but cheap 
- - Add pagination to Instances, Timeline info
- - clean the UI to use better components - I build simple tailwind components to demonstrate 
- - Separate the components
- - The app reloads the app details every 5 seconds - There should be a better way that this - maybe subscribe to channel
- - add tests - with tests, it's easier to test all the edge cases
- - play around with it, maybe see how I could automate the deployment with CI/CD pipelines
+- Add pagination to Instances, Timeline info
+- clean the UI to use better components - I build simple tailwind components to demonstrate 
+- Separate the components
+- The app reloads the app details every 5 seconds - There should be a better way that this - maybe subscribe to channel
+- add tests - with tests, it's easier to test all the edge cases
+- play around with it, maybe see how I could automate the deployment with CI/CD pipelines
+- Handle the realtime status fetch better - rather than relying on the 5 seconds page refresh
 
 
 ## How I'd determine if the feature is successful
