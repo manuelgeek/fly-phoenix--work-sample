@@ -1,4 +1,10 @@
-### What I did
+
+#Fly.io Interview App
+> This is a phonix app with liveview
+
+ LINK: https://wild-thunder-8771.fly.dev/
+
+## What I did
 - Installed `flyctl cli`
 - Created fly.io account - generated API key
 - I pushed the example app given to help me have apps to test - I though faced an error trying to deploy the ruby-rails example - my app is in pending state - but at-least I have app entries to view - for kick-starting the task
@@ -17,6 +23,12 @@
 
 
 
+###Debugging
+
+
+- got an internal server error - at fist deploy
+- fixed the error - I had to run `flyctl --app wild-thunder-8771 secrets set [name]=[value` with the key name being `SECRET_KEY_BASE' - while debugging  - `flyctl --app wild-thunder-8771 logs` reading the logs helped me fix the issue
+
 ## What I would have done given time/ What I didn't build
 - A refresh button - I was kind of torn between adding a refresh button instead of auto refresh with a timer - manual but cheap 
  - Add pagination to Instances, Timeline info
@@ -31,3 +43,17 @@
  - The apps page is showing deployment status, and instances
  - since there a re no tests, testing all pages and scenarios can help assert success
  - To verify the app is indeed refreshing, I tried running the `flyctl scale count`, `flyctl vm stop`, `flyctl vm restart` on the CLI, then observe the App to see if the data is updated. This worked
+
+
+
+## How we can solve end user problems
+- Add a card less dev ENV for staging deployments, maybe there can be limited to requests made, etc - instead of adding card just to get the experience
+- Add the ability to deploy, relaunch, stop from the Apps UI - rather that just CLI alone
+- Ability to monitor healths - realtime data, per requests made
+- View logs from the dashboard - download logs
+
+
+## Lessons
+- I learnt more about Fly.io and the flyctl cli
+- Learnt to understand Liveview more, creating components
+- Understanding flyctl CLI - though I still need to play more with - very awesome solution

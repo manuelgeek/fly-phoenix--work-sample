@@ -1,13 +1,13 @@
-# fly.toml file generated for flyio-ui-ex on 2021-08-26T16:42:20-05:00
+# fly.toml file generated for wild-thunder-8771 on 2021-09-08T21:36:50+03:00
 
-app = "flyio-ui-manu"
+app = "wild-thunder-8771"
 
 kill_signal = "SIGTERM"
 kill_timeout = 5
 processes = []
 
 [env]
-auto_rollback = false
+  auto_rollback = false
 
 [experimental]
   allowed_public_ports = []
