@@ -1,5 +1,5 @@
 
-#Fly.io Interview App
+# Fly.io Interview App
 > This is a phonix app with liveview
 
  LINK: https://wild-thunder-8771.fly.dev/
@@ -23,7 +23,7 @@
 
 
 
-###Debugging
+### Debugging
 
 
 - got an internal server error - at fist deploy
