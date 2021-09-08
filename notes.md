@@ -5,3 +5,10 @@
 - Added version, hostname details to already existing
 - Added Deployment status
 - 
+
+
+
+## What I would have done given time
+ - Add pagination to Instances
+ - clean the UI to use better components - I build simple tailwind components to demonstrate 
+ - Seprate the components
