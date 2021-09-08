@@ -7,6 +7,7 @@ defmodule FlyWeb.AppLive.Show do
   alias FlyWeb.Components.AppInstances
   alias FlyWeb.Components.AppReleases
   alias FlyWeb.Components.ProcessGroups
+  alias FlyWeb.Components.Loading
 
   @impl true
   def mount(%{"name" => name}, session, socket) do

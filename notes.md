@@ -9,6 +9,7 @@
 - App reloads `fetch_app/1` after every 5 seconds - not the best approach though
 - added Times to format date - created `format_date/1` in `show.ex`
 - on index - added view button - easily accessible that clicking the whole component
+- simplified the `show.html.heex` , created different components from it
 
 
 
