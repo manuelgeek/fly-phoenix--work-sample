@@ -5,6 +5,7 @@ defmodule FlyWeb.AppLive.Index do
 
   alias Fly.Client
   alias FlyWeb.Components.HeaderBreadcrumbs
+  alias FlyWeb.Components.Loading
 
   @impl true
   def mount(_params, session, socket) do
